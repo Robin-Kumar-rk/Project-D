@@ -1,4 +1,6 @@
-import { curve, heroBackground, robot } from "../assets";
+/* eslint-disable no-unused-vars */
+import { curve, heroBackground  } from "../assets";
+import HeaderImage from "../assets/HeaderImage.jpg";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -22,10 +24,11 @@ const Hero = () => {
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+           
           <h1 className="h1 mb-6">
-            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
+            UpVote : Where student voice{` `}
             <span className="inline-block relative">
-              Brainwave{" "}
+              Matters{" "}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -36,11 +39,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleash the power of AI within Brainwave. Upgrade your productivity
-            with Brainwave, the open AI chat app.
+          Upvote lets you raise concerns, vote on issues, track progress, and more—all in one place. Be heard and make a difference at your college.
           </p>
           <Button href="/pricing" white>
-            Get started
+             Complain  
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -50,8 +52,9 @@ const Hero = () => {
 
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  src={robot}
-                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
+                  // src={HeaderImage}
+                  src="https://img.freepik.com/free-vector/data-inform-illustration-concept_114360-864.jpg?t=st=1728323601~exp=1728327201~hmac=223d35002f54eb68815f20a15a5b5a61c5c7c35a35188dfdcb0be539b6a6724a&w=740"
+                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]  cover "
                   width={1024}
                   height={490}
                   alt="AI"
@@ -72,7 +75,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="Voting System"
                   />
                 </ScrollParallax>
               </div>
