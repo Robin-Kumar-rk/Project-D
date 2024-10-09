@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { curve, heroBackground  } from "../assets";
-import HeaderImage from "../assets/HeaderImage.jpg";
+import { curve, heroBackground } from "../assets";
+import HeaderImage from "../assets/HeaderImage.svg";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -24,7 +24,6 @@ const Hero = () => {
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-           
           <h1 className="h1 mb-6">
             UpVote : Where student voice{` `}
             <span className="inline-block relative">
@@ -39,10 +38,12 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-          Upvote lets you raise concerns, vote on issues, track progress, and more—all in one place. Be heard and make a difference at your college.
+            Upvote lets you raise concerns, vote on issues, track progress, and
+            more—all in one place. Be heard and make a difference at your
+            college.
           </p>
           <Button href="/pricing" white>
-             Complain  
+            Complain
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -50,10 +51,10 @@ const Hero = () => {
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
 
-              <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+              <div className="aspect-[35/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  // src={HeaderImage}
-                  src="https://img.freepik.com/free-vector/data-inform-illustration-concept_114360-864.jpg?t=st=1728323601~exp=1728327201~hmac=223d35002f54eb68815f20a15a5b5a61c5c7c35a35188dfdcb0be539b6a6724a&w=740"
+                  src={HeaderImage}
+                  // src="https://img.freepik.com/free-vector/data-inform-illustration-concept_114360-864.jpg?t=st=1728323601~exp=1728327201~hmac=223d35002f54eb68815f20a15a5b5a61c5c7c35a35188dfdcb0be539b6a6724a&w=740"
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]  cover "
                   width={1024}
                   height={490}
